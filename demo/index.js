@@ -10,8 +10,10 @@ PouchDB.plugin(PouchDBUpsert)
 
 const doc = { type: 'movie', title: 'Groundhog Day', year: '1983' }
 
+print('PouchDB Demo', { hello: 'Columbia' })
+
 // create pouchdb
-const db = PouchDB('os101')
+// const db = PouchDB('os101')
 
 // enable debugging - PouchDB.debug.enable('*')
 

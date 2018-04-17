@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({9:[function(require,module,exports) {
+})({13:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -101,7 +101,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],6:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":9}],5:[function(require,module,exports) {
+},{"./bundle-url":13}],5:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":6}],28:[function(require,module,exports) {
+},{"_css_loader":9}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -162,7 +162,7 @@ exports.default = {
     year: '1993'
   }]
 };
-},{}],7:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -785,14 +785,14 @@ const removeNodes = exports.removeNodes = (container, startNode, endNode = null)
     }
 };
 //# sourceMappingURL=lit-html.js.map
-},{}],3:[function(require,module,exports) {
+},{}],4:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n    <div class="pa4">\n      <h1>PouchDB Demo</h1>\n      <h2>', '</h2>\n      <pre>', '</pre>\n    </div>\n    '], ['\n    <div class="pa4">\n      <h1>PouchDB Demo</h1>\n      <h2>', '</h2>\n      <pre>', '</pre>\n    </div>\n    ']);
+var _templateObject = _taggedTemplateLiteral(['\n    <div class="pa4 avenir green">\n      <h1>PouchDB Demo</h1>\n      <h2>', '</h2>\n      <pre>', '</pre>\n    </div>\n    '], ['\n    <div class="pa4 avenir green">\n      <h1>PouchDB Demo</h1>\n      <h2>', '</h2>\n      <pre>', '</pre>\n    </div>\n    ']);
 
 var _litHtml = require('lit-html');
 
@@ -801,7 +801,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 exports.default = function (title, body) {
   return (0, _litHtml.render)((0, _litHtml.html)(_templateObject, title, JSON.stringify(body, null, 2)), document.getElementById('app'));
 };
-},{"lit-html":7}],12:[function(require,module,exports) {
+},{"lit-html":12}],21:[function(require,module,exports) {
 var global = (1,eval)("this");
 'use strict';
 var Mutation = global.MutationObserver || global.WebKitMutationObserver;
@@ -873,7 +873,7 @@ function immediate(task) {
   }
 }
 
-},{}],10:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 'use strict';
 var immediate = require('immediate');
 
@@ -1128,7 +1128,7 @@ function race(iterable) {
   }
 }
 
-},{"immediate":12}],11:[function(require,module,exports) {
+},{"immediate":21}],20:[function(require,module,exports) {
 'use strict';
 
 module.exports = argsArray;
@@ -1148,7 +1148,7 @@ function argsArray(fun) {
     }
   };
 }
-},{}],8:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -1452,7 +1452,7 @@ function isUndefined(arg) {
   return arg === void 0;
 }
 
-},{}],13:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -1477,7 +1477,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],22:[function(require,module,exports) {
+},{}],31:[function(require,module,exports) {
 // Unique ID creation requires a high quality random # generator.  In the
 // browser this is a little complicated due to unknown quality of Math.random()
 // and inconsistent support for the `crypto` API.  We do the best we can via
@@ -1511,7 +1511,7 @@ if (getRandomValues) {
   };
 }
 
-},{}],23:[function(require,module,exports) {
+},{}],32:[function(require,module,exports) {
 /**
  * Convert array of 16 byte values to UUID string format of the form:
  * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
@@ -1536,7 +1536,7 @@ function bytesToUuid(buf, offset) {
 
 module.exports = bytesToUuid;
 
-},{}],19:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 var rng = require('./lib/rng');
 var bytesToUuid = require('./lib/bytesToUuid');
 
@@ -1647,7 +1647,7 @@ function v1(options, buf, offset) {
 
 module.exports = v1;
 
-},{"./lib/rng":22,"./lib/bytesToUuid":23}],20:[function(require,module,exports) {
+},{"./lib/rng":31,"./lib/bytesToUuid":32}],29:[function(require,module,exports) {
 var rng = require('./lib/rng');
 var bytesToUuid = require('./lib/bytesToUuid');
 
@@ -1678,7 +1678,7 @@ function v4(options, buf, offset) {
 
 module.exports = v4;
 
-},{"./lib/rng":22,"./lib/bytesToUuid":23}],17:[function(require,module,exports) {
+},{"./lib/rng":31,"./lib/bytesToUuid":32}],26:[function(require,module,exports) {
 var v1 = require('./v1');
 var v4 = require('./v4');
 
@@ -1688,7 +1688,7 @@ uuid.v4 = v4;
 
 module.exports = uuid;
 
-},{"./v1":19,"./v4":20}],24:[function(require,module,exports) {
+},{"./v1":28,"./v4":29}],37:[function(require,module,exports) {
 /**
  * Helpers.
  */
@@ -1842,7 +1842,7 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],21:[function(require,module,exports) {
+},{}],30:[function(require,module,exports) {
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -2069,7 +2069,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":24}],18:[function(require,module,exports) {
+},{"ms":37}],10:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -2256,7 +2256,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],14:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 var process = require("process");
 /**
  * This is the web browser implementation of `debug()`.
@@ -2430,7 +2430,7 @@ function localstorage() {
     return window.localStorage;
   } catch (e) {}
 }
-},{"./debug":21,"process":18}],15:[function(require,module,exports) {
+},{"./debug":30,"process":10}],24:[function(require,module,exports) {
 (function (factory) {
     if (typeof exports === 'object') {
         // Node/CommonJS
@@ -3183,7 +3183,7 @@ function localstorage() {
     return SparkMD5;
 }));
 
-},{}],16:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -3358,7 +3358,7 @@ exports.parse = function (str) {
   }
 };
 
-},{}],4:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 var global = (1,eval)("this");
 'use strict';
 
@@ -15333,7 +15333,7 @@ function replication(PouchDB) {
 PouchDB.plugin(IDBPouch).plugin(WebSqlPouch$1).plugin(HttpPouch$1).plugin(mapreduce).plugin(replication);
 
 exports.default = PouchDB;
-},{"lie":10,"argsarray":11,"immediate":12,"events":8,"inherits":13,"uuid":17,"debug":14,"spark-md5":15,"vuvuzela":16}],33:[function(require,module,exports) {
+},{"lie":22,"argsarray":20,"immediate":21,"events":11,"inherits":25,"uuid":26,"debug":23,"spark-md5":24,"vuvuzela":27}],14:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -15350,7 +15350,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var PouchPromise = typeof Promise === 'function' ? Promise : _lie2.default;
 
 exports.default = PouchPromise;
-},{"lie":10}],37:[function(require,module,exports) {
+},{"lie":22}],33:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -15458,7 +15458,7 @@ var ExportedMap;
 
 exports.Set = ExportedSet;
 exports.Map = ExportedMap;
-},{}],39:[function(require,module,exports) {
+},{}],36:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -15589,7 +15589,7 @@ exports.IDB_ERROR = IDB_ERROR;
 exports.INVALID_URL = INVALID_URL;
 exports.createError = createError;
 exports.generateErrorFromResponse = generateErrorFromResponse;
-},{"inherits":13}],35:[function(require,module,exports) {
+},{"inherits":25}],17:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -16436,7 +16436,7 @@ exports.scopeEval = scopeEval;
 exports.toPromise = toPromise;
 exports.upsert = upsert;
 exports.uuid = uuid;
-},{"argsarray":11,"pouchdb-promise":33,"pouchdb-collections":37,"immediate":12,"events":8,"inherits":13,"pouchdb-errors":39,"uuid":17}],30:[function(require,module,exports) {
+},{"argsarray":20,"pouchdb-promise":14,"pouchdb-collections":33,"immediate":21,"events":11,"inherits":25,"pouchdb-errors":36,"uuid":26}],16:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -16812,7 +16812,7 @@ exports.collate = collate;
 exports.normalizeKey = normalizeKey;
 exports.toIndexableString = toIndexableString;
 exports.parseIndexableString = parseIndexableString;
-},{}],34:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -17394,7 +17394,7 @@ exports.getFieldFromDoc = getFieldFromDoc;
 exports.setFieldInDoc = setFieldInDoc;
 exports.compare = compare;
 exports.parseField = parseField;
-},{"pouchdb-utils":35,"pouchdb-collate":30}],36:[function(require,module,exports) {
+},{"pouchdb-utils":17,"pouchdb-collate":16}],34:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -17529,7 +17529,7 @@ exports.blobOrBufferToBinaryString = blobToBinaryString;
 exports.readAsArrayBuffer = readAsArrayBuffer;
 exports.readAsBinaryString = readAsBinaryString;
 exports.typedBuffer = typedBuffer;
-},{}],32:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 var global = (1,eval)("this");
 'use strict';
 
@@ -17620,7 +17620,7 @@ function stringMd5(string) {
 
 exports.binaryMd5 = binaryMd5;
 exports.stringMd5 = stringMd5;
-},{"pouchdb-binary-utils":36,"spark-md5":15}],38:[function(require,module,exports) {
+},{"pouchdb-binary-utils":34,"spark-md5":24}],35:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -17757,7 +17757,7 @@ exports.mapToKeysArray = mapToKeysArray;
 exports.QueryParseError = QueryParseError;
 exports.NotFoundError = NotFoundError;
 exports.BuiltInError = BuiltInError;
-},{"inherits":13,"pouchdb-collections":37,"argsarray":11,"pouchdb-utils":35}],31:[function(require,module,exports) {
+},{"inherits":25,"pouchdb-collections":33,"argsarray":20,"pouchdb-utils":17}],15:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18793,7 +18793,7 @@ function createAbstractMapReduce(localDocName, mapper, reducer, ddocValidator) {
 }
 
 exports.default = createAbstractMapReduce;
-},{"pouchdb-promise":33,"pouchdb-utils":35,"pouchdb-md5":32,"pouchdb-collections":37,"pouchdb-binary-utils":36,"pouchdb-collate":30,"pouchdb-mapreduce-utils":38}],29:[function(require,module,exports) {
+},{"pouchdb-promise":14,"pouchdb-utils":17,"pouchdb-md5":19,"pouchdb-collections":33,"pouchdb-binary-utils":34,"pouchdb-collate":16,"pouchdb-mapreduce-utils":35}],8:[function(require,module,exports) {
 var process = require("process");
 'use strict';
 
@@ -20200,7 +20200,7 @@ plugin.deleteIndex = (0, _pouchdbUtils.toPromise)(function (indexDef, callback) 
 });
 
 exports.default = plugin;
-},{"pouchdb-utils":35,"pouchdb-promise":33,"pouchdb-selector-core":34,"pouchdb-abstract-mapreduce":31,"pouchdb-collate":30,"pouchdb-md5":32,"process":18}],40:[function(require,module,exports) {
+},{"pouchdb-utils":17,"pouchdb-promise":14,"pouchdb-selector-core":18,"pouchdb-abstract-mapreduce":15,"pouchdb-collate":16,"pouchdb-md5":19,"process":10}],6:[function(require,module,exports) {
 'use strict';
 
 var PouchPromise = require('pouchdb-promise');
@@ -20296,7 +20296,7 @@ if (typeof window !== 'undefined' && window.PouchDB) {
   window.PouchDB.plugin(exports);
 }
 
-},{"pouchdb-promise":33}],2:[function(require,module,exports) {
+},{"pouchdb-promise":14}],2:[function(require,module,exports) {
 'use strict';
 
 require('tachyons');
@@ -20326,10 +20326,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _pouchdbBrowser2.default.plugin(_pouchdbFind2.default);
 _pouchdbBrowser2.default.plugin(_pouchdbUpsert2.default);
 
-var doc = { type: 'movie', title: 'Groundhog Day', year: '1983'
+var doc = { type: 'movie', title: 'Groundhog Day', year: '1983' };
 
-  // create pouchdb
-};var db = (0, _pouchdbBrowser2.default)('os101');
+(0, _print2.default)('PouchDB Demo', { hello: 'Columbia' });
+
+// create pouchdb
+// const db = PouchDB('os101')
 
 // enable debugging - PouchDB.debug.enable('*')
 
@@ -20398,7 +20400,7 @@ var updateDoc = {
   // db.destroy().then(res => print('Destroy Db', res))
 
 };
-},{"tachyons":5,"./movies":28,"./print":3,"pouchdb-browser":4,"pouchdb-find":29,"pouchdb-upsert":40}],25:[function(require,module,exports) {
+},{"tachyons":5,"./movies":3,"./print":4,"pouchdb-browser":7,"pouchdb-find":8,"pouchdb-upsert":6}],38:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -20420,7 +20422,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54495' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56140' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -20521,5 +20523,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[25,2])
+},{}]},{},[38,2])
 //# sourceMappingURL=/dist/demo.map
